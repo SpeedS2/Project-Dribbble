@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../assets/back.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+#app {
+  margin: 0 auto;
+  max-width: 94%;
+}
+
+nav img,
+p,
+i {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 0;
+  width: 100%;
+  height: 9.5rem;
+  background-color: white;
+  font-size: 2rem;
+}
+
+.menu img {
+  width: 9rem;
+}
+
+.menu p {
+  padding-top: 3.5rem;
+}
+
+.menu {
+  display: flex;
+  padding-left: 4rem;
+  gap: 5rem;
+}
+
+.login {
+  display: flex;
+  padding-top: 3.5rem;
+  padding-right: 4rem;
+  gap: 5rem;
+}
+
+.login i {
+  color: orange;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6rem;
+}
+
+.first-text {
+  padding-top: 8rem;
+}
+
+.first-text h1 {
+  font-size: 15rem;
+  line-height: 11rem;
+  color: white;
+}
+
+.first-text p {
+  font-size: 2.5rem;
+  padding-top: 8rem;
+  font-weight: 600;
+  color: white;
+}
+
+.linha1 {
+  content: '';
+  position: absolute;
+  top: 44rem;
+  display: block;
+  width: 24rem;
+  height: 0.3rem;
+  background-color: orange;
+}
+
+.buttons {
+  display: flex;
+  padding-top: 11rem;
+  gap: 4rem;
+}
+
+.btn1 {
+  width: 20rem;
+  height: 7rem;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: 600;
+  background-color: #ff8c00;
+  color: white;
+  cursor: pointer;
+}
+
+.btn2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: 18rem;
+  height: 7rem;
+  background: none;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+}
+
+.btn2 i {
+  padding-right: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8rem;
+
+}
+
+.page-footer {
+  display: flex;
+  font-size: 1.7rem;
+  color: white;
+  gap: 1rem;
+}
+
+.linha2 {
+  content: '';
+  width: 45rem;
+  height: 0.4rem;
+  background-color: grey;
+  opacity: 0.5;
+}
+
+.linha3 {
+  content: '';
+  width: 30rem;
+  height: 0.4rem;
+  background-color: darkorange;
+
+}
+
+.page-footer i {
+  font-size: 3.2rem;
+}
+
+.ln {
+  display: flex;
+  padding-top: 1.2rem;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 13rem;
+  bottom: 25rem;
+  color: white;
+  gap: 3rem;
+}
+
+.second h2 {
+  font-size: 3rem;
+  padding-left: 5.3rem;
+}
+
+.second span {
+  font-size: 1.7rem;
+  font-weight: 600;
+
+}
+
+@media(max-width: 1822px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .login {
+    display: none;
+  }
+
+  .sing {
+    color: #ff8c00;
+  }
+}
+
+@media(max-width:1130px) {
+  .second {
+    display: none;
+  }
+}
+
+@media(max-width:930px) {
+  .first-text h1 {
+    font-size: 10rem;
+  }
+}
+
+@media(max-width:820px) {
+  .linha2 {
+    width: 35rem;
+  }
+}
+
+@media(max-width:720px) {
+  .first-text p {
+    font-size: 2rem;
+  }
+
+  .linha2 {
+    width: 20rem;
+  }
+}
+
+@media(max-width:640px) {
+  main {
+    margin-left: 4rem;
+  }
+}
+
+@media(max-width:615px) {
+  main {
+    margin-left: 1rem;
+  }
+}
+
+@media(max-width:584px) {
+  main {
+    margin-left: 0;
+  }
+
+  .first-text h1 {
+    font-size: 6rem;
+  }
+
+  #app {
+    max-width: 100%;
+  }
+
+  .linha3 {
+    width: 10rem;
+  }
+}
+
+@media(max-width:475px) {
+  .menu {
+    padding-left: 0;
+    gap: 2rem
+  }
+}
